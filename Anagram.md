@@ -32,7 +32,7 @@ pear
 ```
 
 ## Solution
-
+```java
 
 import java.util.Scanner;
 import java.util.Arrays;
@@ -95,3 +95,4 @@ public class MyClass {
 
     }
 }
+```
