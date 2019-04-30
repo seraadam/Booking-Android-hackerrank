@@ -29,4 +29,31 @@ Following the same example above, the final result would be:
 ```
 ## Solution
 ```java
+
+Scanner x = new Scanner(System.in);
+
+     String h= x.nextLine();
+
+     String[] num=h.split(" ");
+
+     int[] delta=new int[num.length];
+     int i=0;
+     delta[0]=Integer.parseInt(num[0]);
+
+     for(i=1;i<num.length;i++)
+     {
+
+       delta[i]=Integer.parseInt(num[i])-Integer.parseInt(num[i-1]);
+       //System.err.print(delta[i]+" ");
+     }
+
+     System.out.print(delta[0]+" ");
+     for( i=1;i<num.length;i++){
+       if(delta[i]<-128 || delta[i]>128)
+         System.out.print("-128 "+delta[i]+" ");
+       else System.out.print(delta[i]+" ");
+
+     }
+
+      in.close();
 ```
